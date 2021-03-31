@@ -131,7 +131,7 @@ section {
   top: 100%;
   letter-spacing: 2px;
   font-size: 18px;
-  background-image: url(Images/bg7.png);
+  background-image: url(images/bg7.png);
   background-size: 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -175,7 +175,7 @@ section {
   height: 100vh;
   top: 175%;
   color: #f0eef1;
-  background-image: url(Images/bg8.png);
+  background-image: url(images/bg8.png);
   background-size: 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -352,7 +352,7 @@ img.hover-shadow {
   height: 80vh;
   top: 275%;
   color: #f0eef1;
-  background-image: url(Images/bg9.png);
+  background-image: url(images/bg9.png);
   background-size: 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
