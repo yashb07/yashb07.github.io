@@ -1,0 +1,549 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/bg1.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.scroll {
+  width: 100%;
+  height: 100%;
+  /* CSS Smooth Scroll */
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.navbar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 10;
+  background: rgba(0,0,0,0.7);
+}
+
+.navbar {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  backdrop-filter: blur(10px);
+  background: rgba(86,86,86,0.3);
+  width: 100%;
+  height: 60px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+.navbar ul li a:hover {
+  color: skyblue;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+
+  /* Scroll Snap */
+  scroll-snap-align: center;
+}
+
+.container{
+  width: 50%;
+  height: 25vh;
+  position: absolute;
+  left: 0;
+  top: 8.3%;
+}
+
+.container .logo{
+  width: 360px;
+  margin: -15px -40px;
+}
+
+.slider{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  bottom: 50px;
+}
+
+#prev, #next{
+  width: 50px;
+  cursor: pointer;
+}
+
+.preview{
+  display: flex;
+  align-items: center;
+  margin: 0 40px;
+}
+
+.preview img{
+  width: 60px;
+  margin: 0 10px;
+  opacity: 0.4;
+}
+
+.preview .active{
+  display: block;
+  border: 3px solid #fff;
+  width: 100px;
+  opacity: 1;
+}
+
+#back1{
+  width: 100%;
+  height: 75vh;
+  top: 100%;
+  letter-spacing: 2px;
+  font-size: 18px;
+  background-image: url(Images/bg7.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right center;
+  position: absolute;
+}
+
+#AboutMe {
+  position: absolute;
+  top: 20%;
+  line-height: 0.1;
+  margin-left: 50px;
+  width: 40%;
+  padding: 50px 0;
+  text-align: left;
+  color: #f0eef1;
+  line-height: 18px;
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.aboutme button{
+  position: absolute;
+  margin-left: -25px;
+  padding:12px 36px;
+  background: transparent;
+  left: 80px;
+  top: 15%;
+  outline: none;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  color: #f0eef1;
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#back2{
+  width: 100%;
+  height: 100vh;
+  top: 175%;
+  color: #f0eef1;
+  background-image: url(Images/bg8.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left center;
+  position: absolute;
+}
+
+#back2 .mywork{
+  width: 100%;
+  position: absolute;
+  font-size: 30px;
+  letter-spacing: 5px;
+  margin: 90px 825px;
+}
+
+#back2 h1 {
+   text-align: left;
+}
+
+.column {
+   flex: 25%;
+   margin: -75px -40px;
+   max-width: 50%;
+   padding: 25px;
+   float: left;
+}
+
+.column img {
+   margin-left: -100px;
+   width: 27%;
+   padding: 50px;
+}
+
+@media screen and (max-width: 800px) {
+   .column {
+      flex: 50%;
+      max-width: 50%;
+      overflow: hidden;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .column {
+      flex: 100%;
+      max-width: 100%;
+      overflow: hidden;
+   }
+}
+
+.row > .column {
+  padding: 50px 100px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  top: -80px;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#back3{
+  width: 100%;
+  right: 0;
+  height: 80vh;
+  top: 275%;
+  color: #f0eef1;
+  background-image: url(Images/bg9.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right center;
+  position: absolute;
+}
+
+#back3 .contact{
+  width: 100%;
+  position: absolute;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin: 75px 50px;
+}
+
+#Social{
+  position: absolute;
+  top: 75%;
+  line-height: 0.1;
+  left: 0px;
+  width: 40%;
+  padding: 50px 0;
+  text-align: left;
+  color: #f0eef1;
+  line-height: 18px;
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+a:link {
+  color: #f0eef1;
+}
+
+a:visited {
+  color: #f0eef1;
+}
+
+#highlight {
+  color: #4fe4ff;
+}
+
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+#buttons .ft14 {
+  float: left;
+  margin-right:25px;
+  font-size: 42px !important;
+  color: #4fe4ff;
+  margin-top: 30px;
+}
+
+#mail {
+  position: absolute;
+  clear: both;
+  font-size: 18px;
+  top: 95%;
+}
+
+#mail a:link {
+  color: #f0eef1;
+}
+
+#changeWhite {
+  background-color: #1010;
+  background: white;
+  border: 2px solid black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  border-radius: 100%;
+  left: 0px;
+}
+
+#changeBlack {
+  background-color: #101010;
+  background: #101010;
+  border: 2px solid white;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar #changeWhite, #changeBlack {
+    padding: 10px;
+  }
+  .navbar {
+    height: 45px;
+  }
+  .navbar ul {
+    height: 30px;
+  }
+  .navbar ul li{
+    width: 50%;
+    padding: 0rem;
+    text-align: center;
+  }
+  .navbar ul li a{
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .container .logo{
+    width: 75%;
+    margin: 30px 0px;
+  }
+
+  .slider {
+    width: 88%;
+  }
+
+  .thumbnail, .active_thumbnail{
+    display: none;
+  }
+
+  #back1 {
+    background-image: none;
+  }
+  .aboutme button {
+    font-size: 12px;
+    padding: 0px 25px;
+    top: 20%;
+  }
+  #AboutMe {
+    font-size: 12px;
+    width: 75%;
+  }
+
+  #back2 {
+    margin-top: 90px;
+    background-image: none;
+  }
+  #back2 .mywork {
+    margin: 150px 0px;
+    top: 0%;
+    width: 100%;
+  }
+  #back2 h1 {
+    float: left;
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+  }
+  #back2 .row {
+    width: 85%;
+    margin: 0px 25px;
+  }
+  #back2 .column {
+    width: 100%;
+    align-items: center;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    padding-bottom: 25px;
+  }
+  #back2 .column img {
+    width: 25%;
+    padding: 0px 0px;
+    margin: 0px 7px;
+  }
+  #back2 .modal .modal-content{
+    top: 20%;
+  }
+
+  #back3 {
+    background-image: none;
+  }
+  #output4 {
+    font-size: 15px;
+    position: absolute;
+    top: 25px;
+  }
+  #back3 #Social {
+    position: absolute;
+    top: -0px;
+    font-size: 12px;
+    width: 75%;
+  }
+  #back3 buttons .ft14{
+    font-size: 30px;
+  }
+  #back3 #mail {
+    font-size: 12px;
+  }
+}
