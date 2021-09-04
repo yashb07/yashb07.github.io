@@ -60,30 +60,6 @@ header {
     margin: 0 auto;
 }
 
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1152px;
-    }
-}
-
 .container .left .branding img {
     width: 120px;
 }
@@ -186,6 +162,7 @@ section.about .social a {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -452,6 +429,7 @@ footer .footer-socials {
 
 footer .footer-socials a{
     color: var(--pure);
+    text-decoration: none;
     margin-right: 1rem;
 }
 
@@ -459,67 +437,165 @@ footer .copyright {
     color: var(--ternary);
 }
 
+.hamburger {
+    position: absolute;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    top: 40px;
+    right: 40px;
+    z-index: 1;
+}
+
+.hamburger a {
+    font-size: 30px;
+    color: var(--orange);
+    text-decoration: none;
+}
+
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: var(--light);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    transform: translateX(-100%);
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.mobile-nav ul {
+    list-style-type: none;
+}
+
+.mobile-nav ul li a{
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.cancel {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.cancel a {
+    font-size: 36px;
+    color: var(--orange);
+    text-decoration: none;
+}
+
+site-main-wrapper {
+    position: relative;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1152px;
+    }
+}
+
 @media (max-width: 1024px) {
     header #main-nav {
         display: none;
     }
-    .hero {
-        padding-top: 4rem;
-    }
-
     .hero .left img {
-        width: 400px;
-        padding-bottom: 0;
+        width: 300px;
     }
     .hero .right h1 {
         font-size: 3rem;
     }
-
+    .hero {
+        padding-top: 10rem;
+    }
     section.about .about-me-img {
         height: 360px;
+    }
+    section.work .card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 576px) {
-    html {
-        width: 127%;
-    }
-    #icons {
-        visibility: hidden;
-    }
-    .hero img {
-        margin-top: -4rem;
-    }
-    .hero .right {
-        text-align: center;
-        align-items: center;
-        margin-top: 3rem;
-    }
-    #home .right button {
-        /* padding-right: 5rem; */
-        /* margin-right: 5rem; */
-    }
     .hero {
         flex-direction: column;
+        
     }
-    .about .container {
-        flex-direction: column;
-        align-items: center;
+    .hero .left img {
+        width: 372px;
+        margin-top: -7rem;
+    }
+    .hero .right {
+        margin-top: 2rem;
         text-align: center;
+        padding: 0 1rem;
     }
-    .about .social {
-        margin-left: 9rem;
+    .hero .right h6 {
+        margin-top: -1rem;
     }
-    section.services .card-wrapper{
+    .hero .right h1 {
+        margin-top: -1rem;
+    }
+    .hero .right p {
+        margin-top: -1.5rem;
+    }
+    .hero .right .btn {
+        margin-bottom: 2rem;
+    }
+    .about-inner-wrap {
+        flex-direction: column;
+    }
+    .about-inner-wrap .right {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .about .right .social {
+        justify-content: center;
+    }
+    section {
+        padding: 4rem 0;
+    }
+    section.services .card-wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
-    section.work .card img{
-        height: 50px;
-    }
-    section.work .card-wrapper{
+    section.work .card-wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
     section.contact .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.contact .input-wrap {
         grid-template-columns: repeat(1, 1fr);
     }
 }
