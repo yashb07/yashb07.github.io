@@ -1,165 +1,189 @@
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <title>Yash Belsare</title>
-    <link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
+</head>
 
-  <body id="dark" style="background-color:#101010;">
-    <div class="scroll">
-      <div id="hero">
-        <nav class="navbar">
-          <ul>
-            <button id="changeWhite"></button>
-            <button id="changeBlack"></button>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#back1">About</a></li>
-            <li><a href="#back2">My Work</a></li>
-            <li><a href="#back3">Social</a></li>
-          </ul>
-        </nav>
-
+<body>
+    <header id="home">
         <div class="container">
-          <img src="images/logo.png" class="logo">
-        </div>
-
-        <div class="slider">
-          <img src="test_images/left-arrow.png" id="prev">
-          <div class="preview">
-            <img src="images/thumb1.jpg" class="active thumbnail">
-            <img src="images/thumb2.jpg" class="thumbnail">
-            <img src="images/thumb3.jpg" class="thumbnail">
-            <img src="images/thumb4.jpg" class="thumbnail">
-            <img src="images/thumb5.jpg" class="thumbnail">
-          </div>
-          <img src="test_images/right-arrow.png" id="next">
-        </div>
-
-        <div id="back1">
-          <div class="aboutme">
-            <button id="output1" onclick="aboutme()">About me</button>
-            <div id="AboutMe">
-              <p id="output2">Hi, My name's <span id="highlight">Yash</span> and this is my personal website.<br><br>
-              I'm a 3d Artist in my free time.<br>
-              I've created the website myself with a few references here and there. My hobbies include creating <span id="highlight">3d Art</span> ofcourse, especially stuff that looks visually appealing.<br><br>
-              I picked up this skill about an year ago during<br>
-              the lockdown and I am glad I did. It helped me express my design style through my various renders.<br>
-              I've worked on several original projects which can be viewed below.<br><br>
-              All the images used on this site are based of of my original projects or things I learned through Youtube channels.<br>
-              I used <span id="highlight">Blender 3d</span> software in order to make all these renders.</p>
+            <nav class="flex items-center  justify-between">
+                <div class="left flex items-center justify-between">
+                    <div class="branding">
+                        <img src="images/logo.png" alt="Logo">
+                    </div>
+                    <div id="icons">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#projects">Projects</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="#contact"><button class="btn btn-primary">Contact</button></a>
+                </div>
+            </nav>
+            <div class="hero flex items-center">
+                <div class="left flex flex-1 justify-center">
+                    <img src="images/yash1.png" alt="">
+                </div>
+                <div class="right flex-1">
+                    <h6>Yash Belsare</h6>
+                    <h1>Front End <span>Developer</span></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repudiandae enim numquam
+                        error ipsum facere animi expedita voluptatem amet laborum.</p>
+                    <div>
+                        <a href="https://github.com/yashb07" target="_blank"><button
+                                class="btn btn-secondary">Github</button></a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
+    </header>
 
-        <div id="back2">
-          <div class="mywork">
-            <h1 id="output3">My Work</h1>
-            <div class="row">
-              <div class="column">
-                <img src="work/1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                <img src="work/2.png"onclick="openModal();currentSlide(2)" class="hover-shadow">
-                <img src="work/3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
-              </div>
-              <div class="column">
-                <img src="work/4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
-                <img src="work/5.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
-                <img src="work/6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
-              </div>
-              <div class="column">
-                <img src="work/7.png" onclick="openModal();currentSlide(7)" class="hover-shadow">
-                <img src="work/8.png" onclick="openModal();currentSlide(8)" class="hover-shadow">
-                <img src="work/9.png" onclick="openModal();currentSlide(9)" class="hover-shadow">
-              </div>
+    <section class="about" id="about">
+        <div class="container flex items-center">
+            <div class="flex-1">
+                <img class="about-me-img" src="./images/yash2.png" alt="">
             </div>
-
-            <div id="myModal" class="modal">
-              <span class="close cursor" onclick="closeModal()">&times;</span>
-              <div class="modal-content">
-                <div class="mySlides">
-                  <div class="numbertext">1 / 9 - Lucid Crystal</div>
-                  <img src="work/1.jpg" style="width:100%">
+            <div class="flex-1">
+                <h1>About <span>me</span></h1>
+                <h3>Hi, I'm Yash Belsare</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut neque obcaecati sequi molestiae similique
+                    tempora architecto vel vitae distinctio? Vitae non soluta suscipit iure harum dolor adipisci hic
+                    quaerat quidem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut neque obcaecati sequi
+                    molestiae similique
+                    tempora architecto vel vitae distinctio? Vitae non soluta suscipit iure harum dolor adipisci hic
+                    quaerat quidem?</p>
+                <div class="social">
+                    <a href="https://github.com/yashb07" class="fa fa-github" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/yash-belsare-0706/" class="fa fa-linkedin" target="_blank"></a>
+                    <a href="https://www.behance.net/yashbelsare" class="fa fa-behance" target="_blank"></a>
+                    <a href="https://www.instagram.com/yashblends/" class="fa fa-instagram" target="_blank"></a>
                 </div>
-
-                <div class="mySlides">
-                  <div class="numbertext">2 / 9 - Floating Donut</div>
-                  <img src="work/2.png" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                  <div class="numbertext">3 / 9 - Among Us</div>
-                  <img src="work/3.png" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                  <div class="numbertext">4 / 9 - Euphoria Rose</div>
-                  <img src="work/4.jpg" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                  <div class="numbertext">5 / 9 - Tesla Model S</div>
-                  <img src="work/5.png" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                  <div class="numbertext">6 / 9 - Interior Design</div>
-                  <img src="work/6.jpg" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                  <div class="numbertext">7 / 9 - Water Simulation</div>
-                  <img src="work/7.png" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                  <div class="numbertext">8 / 9 - Avengers HQ</div>
-                  <img src="work/8.png" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                  <div class="numbertext">9 / 9 - Abstract Disks</div>
-                  <img src="work/9.png" style="width:100%">
-                </div>
-                     <!-- Next/previous controls -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                     <!-- Caption text -->
-                <div class="caption-container">
-                  <p id="caption"></p>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-
-        <div id="back3">
-          <div class="contact">
-            <h1 id="output4">Social</h1>
-            <div id="Social">
-              <p id="output5"> I post all of my projects on various social platforms such as Behance, Instagram and so forth, links to which are provied below.<br><br>
-              I recently discovered <span id="highlight">Fiverr</span> and I'm trying to freelance 3d projects on it. You can check out my Fiverr profile <a href="https://www.fiverr.com/yashblends" target="_blank">here</a>.<br>
-              <br>Do give them a try.<br></p>
-              <div id="buttons">
-                <div id="output7">
-                  <div class="inline" data-scribe="component:button" style="width: 100%;"><a href="https://www.instagram.com/yashblends/" target="_blank" class="btn" id="b"><i class="fa fa-instagram ft14"></i></a></div>
-                  <div class="inline" data-scribe="component:button" style="width: 100%;"><a href="https://www.behance.net/yashbelsare" target="_blank" class="btn" id="b"><i class="fa fa-behance ft14"></i></a></div>
-                  <div class="inline" data-scribe="component:button" style="width: 100%;"><a href="https://www.linkedin.com/in/yash-belsare-0706/" target="_blank" class="btn" id="b"><i class="fa fa-linkedin ft14"></i></a></div>
-                  <div class="inline" data-scribe="component:button" style="width: 100%;"><a href="https://twitter.com/YashBlends" target="_blank" class="btn" id="b"><i class="fa fa-twitter ft14"></i></a></div>
+    </section>
+    <section class="services" id="services">
+        <div class="container">
+            <h1 class="section-heading"><span>My</span> Services</h1>
+            <p>I provide top notch front end devlopment as well as 3d services </p>
+            <div class="card-wrapper">
+                <div class="card">
+                    <a href="" class="fas fa-paint-brush"></a>
+                    <h2>Front End Development</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia veritatis nam aspernatur dolore
+                    </p>
                 </div>
-              </div>
-              <div id="mail">
-                <p><a id="output6" href="yashblends@gmail.com" target="_blank">yashblends@gmail.com</a></p>
-              </div>
+                <div class="card">
+                    <a href="" class="fas fa-paint-brush"></a>
+                    <h2>Android Development</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia veritatis nam aspernatur dolore
+                    </p>
+                </div>
+                <div class="card">
+                    <a href="" class="fas fa-paint-brush"></a>
+                    <h2>Blender 3d</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia veritatis nam aspernatur dolore
+                    </p>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <script src="smoothscroll.js"></script>
-    <script src="homebg.js"></script>
-    <script src="aboutme.js"></script>
-    <script src="modal.js"></script>
-    <script src="darkmode.js">
-    </script>
-  </body>
+    </section>
+    <section class="freelancer">
+        <h1>Available for freelancing</h1>
+        <p>I provide quality services in 3d and front end development</p>
+        <a href=" https://www.fiverr.com/yashblends" target="_blank"><button class="btn btn-primary">Fiverr
+                here</button></a>
+    </section>
+
+    <section class="work" id="projects">
+        <div class="container">
+            <h1 class="section-heading"><span>My</span> work</h1>
+            <p>I provide top notch front end devlopment as well as 3d services</p>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="overlay">
+                        <!-- <span>Category</span> -->
+                        <a href="https://yashweb07.github.io" target="_blank">Tech Portfolio</a>
+                    </div>
+                    <img src="./images/website-work.png" alt="">
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <!-- <span>Category</span> -->
+                        <a href="https://yashb07.github.io" target="_blank">Blender Portfolio</a>
+                    </div>
+                    <img src="./images/blender-work.png" alt="">
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <!-- <span>Category</span> -->
+                        <a href="https://adopt-a-dog-site.000webhostapp.com/" target="_blank">Dog Adopt Website</a>
+                    </div>
+                    <img src="./images/doggo-work.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h1 class="section-heading">Contact <span>me</span></h1>
+            <p>You could try reaching out to me through here</p>
+            <div class="card-wrapper">
+                <div class="card">
+                    <img src="./images/phone.png" alt="">
+                    <h2>Phone</h2>
+                    <h6>+7777052391</h6>
+                </div>
+                <div class="card">
+                    <img src="./images/email.png" alt="">
+                    <h2>Email</h2>
+                    <h6>yashrbelsare@gmail.com</h6>
+                </div>
+                <div class="card">
+                    <img src="./images/map.png" alt="">
+                    <h2>Address</h2>
+                    <h6>Confidential</h6>
+                </div>
+            </div>
+            <form action="">
+                <div class="input-wrap">
+                    <input type="text" placeholder="Your name">
+                    <input type="email" placeholder="Your email">
+                </div>
+                <div class="input-wrap-2">
+                    <input type="text" placeholder="Subject">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn btn-primary">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <img class="footer-logo" src="images/logo.png" alt="Logo">
+        <div class="footer-socials">
+            <a href="https://github.com/yashb07" class="fa fa-github" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/yash-belsare-0706/" class="fa fa-linkedin" target="_blank"></a>
+            <a href="https://www.behance.net/yashbelsare" class="fa fa-behance" target="_blank"></a>
+            <a href="https://www.instagram.com/yashblends/" class="fa fa-instagram" target="_blank"></a>
+        </div>
+        <div class="copyright">
+            Copyright 2021 @ Yash Belsare. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
 </html>
