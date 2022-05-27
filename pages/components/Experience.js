@@ -26,7 +26,7 @@ function Experience() {
             designs and frontend of certain projects. Currently, I have been a
             part of the core team of developers at a managerial position. This
             includes responsibilites such as handling other frontend interns, as
-            well as project management. Throughout my time here, I've refined my
+            well as project management. Throughout my time here, Ive refined my
             skills in React, Next.js, Angular frontend frameworks and mastered
             my design skills using Tailwind, and Sass. I have also developed the
             skill of project management and team handling.
