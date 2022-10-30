@@ -28,6 +28,10 @@ function MyApp({ Component, pageProps }) {
           property="og:description"
           content="A developer portfolio website of Yash Belsare for showcasing skills, experience and projects built and developed by me"
         />
+        <meta
+          property="og:image"
+          content="https://raw.githubusercontent.com/yashb07/yashb07.github.io/main/assets/og-image.png"
+        />
       </Head>
       <Component {...pageProps} />
     </>
