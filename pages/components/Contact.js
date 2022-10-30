@@ -49,7 +49,7 @@ function Contact() {
         </div>
       </div>
       <form
-        className="form md:w-full lg:w-[60%] flex flex-col gap-14 bg-[#212121] p-32"
+        className="form w-full lg:w-[60%] flex flex-col gap-14 bg-[#212121] p-16 lg:p-32"
         name="contact"
         method="POST"
         action="/success"

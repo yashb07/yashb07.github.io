@@ -1,5 +1,6 @@
 import { FaDev } from "react-icons/fa";
 import { MdDesignServices, MdDeveloperMode } from "react-icons/md";
+import { FaAws } from "react-icons/fa";
 
 function About() {
   return (
@@ -10,24 +11,23 @@ function About() {
           <FaDev className="text-7xl" />
           <h2 className="font-semibold text-5xl">Front End Development</h2>
           <p className="text-3xl">
-            I build frontend web applications using React, Next, and Angular. I
-            also work with Tailwind and Sass for design.
+            I can build frontend web applications using React JS, Next JS, and
+            Angular.
+          </p>
+        </div>
+        <div className="about-card w-full lg:w-9/10">
+          <FaAws className="text-7xl" />
+          <h2 className="font-semibold text-5xl">Cloud App Development</h2>
+          <p className="text-3xl">
+            I can build and deploy cloud based web applications using AWS
           </p>
         </div>
         <div className="about-card w-full lg:w-9/10">
           <MdDesignServices className="text-7xl" />
-          <h2 className="font-semibold text-5xl">Website Design</h2>
+          <h2 className="font-semibold text-5xl">UI Building</h2>
           <p className="text-3xl">
-            I can develop your website using Sass and Tailwind CSS for a clean
-            web experience using your Figma/Photoshop designs.
-          </p>
-        </div>
-        <div className="about-card w-full lg:w-9/10">
-          <MdDeveloperMode className="text-7xl" />
-          <h2 className="font-semibold text-5xl">Mobile App Development</h2>
-          <p className="text-3xl">
-            I can develop basic mobile applications using Flutter, Android
-            Studio.
+            I can convert your Figma designs into beautiful websites using
+            Tailwind CSS.
           </p>
         </div>
       </div>

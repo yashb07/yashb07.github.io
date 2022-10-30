@@ -18,18 +18,21 @@ function Experience() {
             <GoLinkExternal className="text-4xl md:text-5xl"></GoLinkExternal>
           </a>
           <h3 className="font-semibold text-3xl md:text-4xl">
-            Frontend Developer (Oct 2021 - Present){" "}
+            Frontend Developer (Oct 2021 - June 2022){" "}
           </h3>
-          <p className="text-3xl md:text-3xl ">
-            I am currently working at Vibencode, a startup that aims to develop
-            web solutions using modern web technologies. Initially I worked on
-            designs and frontend of certain projects. Currently, I have been a
-            part of the core team of developers at a managerial position. This
-            includes responsibilites such as handling other frontend interns, as
-            well as project management. Throughout my time here, Ive refined my
-            skills in React, Next.js, Angular frontend frameworks and mastered
-            my design skills using Tailwind, and Sass. I have also developed the
-            skill of project management and team handling.
+          <p className="text-3xl md:text-3xl">
+            I have had <b className="text-3xl md:text-3xl">10 months</b> of
+            professional experience working as a{" "}
+            <b className="text-3xl md:text-3xl">frontend developer</b> at at
+            Vibencode pvt. ltd., an innovative startup aimed at creating only
+            the best web applications for {"it's"} clients using latest
+            technologies. Initially, I worked on designing the websites and
+            making them responsive. Later as I got promoted to the core team of
+            developers, I had the responsibility of{" "}
+            <b className="text-3xl md:text-3xl">managing projects</b> as well as
+            the frontend teams and interns. Throughout my time here, {"I've"}{" "}
+            refined my skills in React JS, Next JS, Angular and mastered my web
+            design skills using Tailwind CSS, and Sass.
           </p>
         </div>
       </div>

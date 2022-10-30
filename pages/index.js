@@ -15,7 +15,7 @@ import Contact from "./components/Contact";
 export default function Home() {
   return (
     <div className="main-container flex flex-col justify-center items-center">
-      <div className="main-container-width flex flex-col w-4/5 gap-32 lg:gap-0">
+      <div className="main-container-width flex flex-col w-4/5 gap-40 lg:gap-0">
         <section
           id="home"
           className="homepage-section flex flex-col justify-around md:justify-between h-screen"
@@ -26,26 +26,21 @@ export default function Home() {
         </section>
         <section
           id="about"
-          className="homepage-section flex flex-col justify-center md:h-screen"
+          className="homepage-section flex flex-col justify-center lg:h-screen gap-32"
         >
           <About />
-        </section>
-        <section
-          id="skills"
-          className="homepage-section flex flex-col justify-center md:h-screen"
-        >
           <Skills />
         </section>
         <section
           id="experience"
-          className="homepage-section flex flex-col justify-around md:h-screen gap-32 lg:gap-0"
+          className="homepage-section flex flex-col justify-around lg:h-screen gap-32"
         >
           <Experience />
           <Projects />
         </section>
         <section
           id="contact"
-          className="homepage-section flex flex-col justify-around md:h-screen"
+          className="homepage-section flex flex-col justify-around lg:h-screen"
         >
           <Contact />
         </section>
