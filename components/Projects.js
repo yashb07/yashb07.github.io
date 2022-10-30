@@ -1,4 +1,5 @@
 import { GoLinkExternal } from "react-icons/go";
+import Link from "next/link";
 
 function Projects() {
   return (
@@ -7,13 +8,13 @@ function Projects() {
       <div className="about-cards flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 justify-between gap-20">
         <div className="about-card w-full">
           <a
-            href="https://github.com/yashb07/Full-Stack-Website-Minor-Project"
+            // href="https://github.com/yashb07/Full-Stack-Website-Minor-Project"
             target="_blank"
             className="flex items-center gap-10 cursor-pointer font-semibold text-4xl md:text-5xl"
             rel="noreferrer"
           >
             Pets App - AWS{" "}
-            <GoLinkExternal className="text-3xl md:text-4xl"></GoLinkExternal>
+            {/* <GoLinkExternal className="text-3xl md:text-4xl"></GoLinkExternal> */}
           </a>
           <p className="text-3xl">
             Designed and developed a CRUD application using AWS Amplify cloud
@@ -24,20 +25,22 @@ function Projects() {
         </div>
         <div className="about-card w-full">
           <a
-            href="https://github.com/yashb07/Full-Stack-Website-Minor-Project"
+            // href="https://github.com/yashb07/Full-Stack-Website-Minor-Project"
             target="_blank"
             className="flex items-center gap-10 cursor-pointer font-semibold text-4xl md:text-5xl"
             rel="noreferrer"
           >
             Vocal - Music Platform{" "}
-            <GoLinkExternal className="text-3xl md:text-4xl"></GoLinkExternal>
+            {/* <GoLinkExternal className="text-3xl md:text-4xl"></GoLinkExternal> */}
           </a>
           <p className="text-3xl">
             We, a group of four students are in the process of developing and
             designing a highly complex music streaming web application which
             will combine AI ML, Cloud development and deployment, and Web
             development using Next JS.{" "}
-            <e className="text-3xl text-slate-800">Read more...</e>
+            <Link href="/vocal">
+              <a className="text-3xl font-bold cursor-pointer">Read more...</a>
+            </Link>
           </p>
         </div>
         <div className="about-card w-full">

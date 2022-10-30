@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import homepageImage from "../../assets/homepage-image.png";
+import homepageImage from "../assets/homepage-image.png";
 
 import React from "react";
 
